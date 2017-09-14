@@ -1,6 +1,8 @@
 # CTCI
 Interview Preparation w/ C++
 
+All questions were completed in under ~00:45:00 - 01:00:00 time limit
+
 # Table of Contents
 [Chapter 1 | Array and Strings](#chapter-1-array-and-strings)
 
