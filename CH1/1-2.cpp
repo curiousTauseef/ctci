@@ -65,17 +65,20 @@ bool optimized1(char array1[], char array2[], int size)
 {
 	int table[128];
 
+	//Increment an index corresponding to 'char'
 	for (int i = 0; i < size; ++i)
 	{
 		int index = array1[i];
 		table[index] += 1;
 	}
 
+	//Decrement an index corresponding to 'char'
 	for (int j = 0; j < size; ++j)
 	{
 		int index = array2[j];
 		table[index] -= 1;
 
+		//For every increment, there must be decrement if arr1.length == arr2.length
 		if (table[index] < 0)
 		{
 			return false;
