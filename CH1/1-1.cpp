@@ -6,10 +6,13 @@ Is Unique: Implement an algorithm to determine if a string has all unique charac
 Hints: #44, #117, #132
 
 44: Try a hash table
+My Thoughts: Hash table would require o(n) space - not very good
 
 117: Could a bit vector be useful?
+My Thoughts: A bit set in C++ would make code less readable but improves O(1) space by a factor of 8
 
 132: Can you solve it in O(n * log(n)) time? What might a solution like that look like?
+My Thoughts: First use quicksort -> O(log(n)). Second use a modified linear search -> O(n)
 
 */
 
