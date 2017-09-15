@@ -9,10 +9,13 @@ Output: "Mr%20John%20Smith"
 
 HINTS
 #53: It's often easiest to modify strings by going from the end of the string to the beginning
-Filling in the contents of the "true array" starting at the extra space to the front is the
+*
+Filling in the contents of the "real string" starting at the extra space to the front is the
 most efficient algorithm.
 
 #118: You might find out that you need to know the number of spaces. Can you just count them?
+*
+Yes, you can count the number of spaces starting from the end.
 */
 
 #include <iostream>
@@ -20,8 +23,53 @@ most efficient algorithm.
 
 using namespace std;
 
+void bruteForce(char input[], char result[]);
+
+/*
+Time Complexity: O(n) -> goes through entire input array
+Space Complexity: O(n) -> requires an auxiliary array
+*/
+void bruteForce(char input[], char result[])
+{
+	int spaces = 0;
+	int countFromEnd = strlen(input);
+	int newArrCounter = 0;
+	int totalSize = strlen(input);
+
+	//Count the spaces to get the "real string"
+	while (input[countFromEnd] == ' ')
+	{
+		++spaces;
+		--countFromEnd;
+	}
+
+	//Copy from beginning to end, but insert "%20" for every ' ' encountered
+	for (int i = 0; i < totalSize + 1 && newArrCounter < totalSize - spaces; ++i)
+	{
+		result[newArrCounter] = input[i];
+			
+		if (input[i] == ' ')
+		{
+			result[newArrCounter] = '%';
+			result[newArrCounter + 1] = '2';
+			result[newArrCounter + 2] = '0';
+			
+			//Update the array counter for the new array
+			newArrCounter += 2;
+		}
+
+		++newArrCounter;
+	}
+}
+
 int main()
 {
-	char input[18] = "Mr John Smith    ";
+	char input[18] = "Mr John Smith    ";	
+	char result[strlen(input) + 1];
+
+	bruteForce(input, result);
+
+	cout << result << endl;
+
 	return 0;
 }
