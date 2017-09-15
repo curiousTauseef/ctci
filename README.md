@@ -18,6 +18,12 @@ All questions were completed in under ~00:45:00 - 01:00:00 time limit
 
 [Chapter 7 | Object Oriented Design](#chapter-7-object-oriented-design)
 
+[Chapter 8 | Recursion and Dynamic Programming](#chapter-8-recursion-and-dynamic-programming)
+
+[Chapter 9 | System Design and Scalability](#chapter-9-system-design-and-scalability)
+
+[Chapter 10 | Sorting and Searching](#chapter-10-sorting-and-searching)
+
 ## Chapter 1 Array and Strings
 <a href="https://github.com/DittoPDX/CTCI/tree/master/CH1">Chapter 1 | Questions & Answers</a>
 
