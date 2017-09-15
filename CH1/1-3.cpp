@@ -24,6 +24,7 @@ Yes, you can count the number of spaces starting from the end.
 using namespace std;
 
 void bruteForce(char input[], char result[]);
+void optimized(char input[], int sizeString);
 
 /*
 Time Complexity: O(n) -> goes through entire input array
@@ -62,14 +63,54 @@ void bruteForce(char input[], char result[])
 	}
 }
 
+/*
+Time Complexity: O(n) -> goes through entire array
+Space Complexity: O(1) -> in-place algorithm
+*/
+void optimized(char input[], int sizeString)
+{
+	//Start at index 16, but size is 17 for '/0' char
+	int j = strlen(input) - 1;
+
+	for (int i = sizeString; i > -1; --i)
+	{
+		input[j] = input[i];
+	
+		if (input[i] == ' ')
+		{
+			input[j] = '0';
+			input[j - 1] = '2';
+			input[j - 2] = '%';
+			j -= 2;
+		}
+
+		--j;
+	}
+}
+
 int main()
 {
 	char input[18] = "Mr John Smith    ";	
 	char result[strlen(input) + 1];
 
+	/*	Brute-force Solution
 	bruteForce(input, result);
 
 	cout << result << endl;
+	*/
+
+	//Get the last index of the "string"
+	int start = strlen(input) - 1;
+	while (input[start] == ' ')	
+	{
+		--start;	
+	}
+
+	//Test if start is valid
+	cout << start << endl;
+
+	optimized(input, start);
+	cout << input << endl;
 
 	return 0;
 }
