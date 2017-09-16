@@ -23,14 +23,38 @@ Not quite
 */
 
 #include <iostream>
+#include <cctype>
+#include <cstring>
 
 using namespace std;
+
+bool bruteForce(char input[]);
+
+bool bruteForce(char input[])
+{
+	int totalLength = strlen(input);
+
+	if (totalLength <= 1)
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+
+}
 
 int main()
 {
 	//Input string
 	char input[9] = "tact coa";
 
+	//Boundary-case
+	char test1[1] = "";
+
+	bool checkIfPOP = bruteForce(test1);
+	
 	/*
 	Expected output
 	True (permutation: "taco cat", "atco cta", etc.)
