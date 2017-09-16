@@ -31,6 +31,10 @@ All questions were completed in under ~00:45:00 - 01:00:00 time limit
 
 - <a href="https://github.com/DittoPDX/CTCI/blob/master/CH1/1-2.cpp">1.2: Check Permutation</a>
 
+- <a href="https://github.com/DittoPDX/CTCI/blob/master/CH1/1-3.cpp">1.3: URLify</a>
+
+- <a href="https://github.com/DittoPDX/CTCI/blob/master/CH1/1-3.cpp">1.4: Permutation of Palindrome</a>
+
 ## Chapter 2 Linked Lists
 
 ## Chapter 3 Stacks and Queues
