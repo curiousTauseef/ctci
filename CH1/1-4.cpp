@@ -30,6 +30,10 @@ using namespace std;
 
 bool bruteForce(char input[]);
 
+/*
+Time Complexity: O(2n) -> O(n) (Goes through data on average once)
+Space Complexity: O(128) -> O(1) requires constant size of 128 integers
+*/
 bool bruteForce(char input[])
 {
 	int totalLength = strlen(input);
@@ -46,8 +50,7 @@ bool bruteForce(char input[])
 	{
 		if (isalnum(input[i]))
 		{	
-			int index = input[i];
-			table[index] += 1;
+			++table[(int) input[i]];
 			++trueLen;	
 		}
 	}	
@@ -58,48 +61,16 @@ bool bruteForce(char input[])
 	{
 		if (trueLen % 2 == 0)
 		{
-			if (table[p] % 2 != 0)
-			{
-				return false;
-			}
+			if (table[p] % 2 != 0) return false;
 		}
 		else
 		{
-			if (table[p] % 2 != 0)
-			{
-				++oddCount;
-			}
+			if (table[p] % 2 != 0) ++oddCount;
 
 			if (oddCount > 1) return false;
 		}
 	}
-/*
-	if (trueLen % 2 == 0)
-	{
-		for (int j = 0; j < 127; ++j)
-		{
-			if (table[j] % 2 != 0)
-			{
-				return false;
-			}
-		}
-	}
-	else
-	{
-		for (int k = 0; k < 127; ++k)
-		{
-			if (table[k] % 2 != 0)
-			{
-				++oddCount;
-			}
-			
-			if (oddCount > 1)
-			{
-				return false;
-			}
-		}
-	}
-*/
+
 	return true;
 }
 
@@ -107,12 +78,12 @@ int main()
 {
 	//Input string
 	char input[9] = "tact coa";
-	char input2[7] = "annasp";
+	char input2[7] = "anna";
 
 	//Boundary-case
 	char test1[1] = "";
 
-	bool checkIfPOP = bruteForce(input2);
+	bool checkIfPOP = bruteForce(input);
 
 	cout << "Permutation of String: " << checkIfPOP << endl;	
 
