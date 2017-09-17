@@ -51,17 +51,6 @@ bool bruteForce(char input[])
 			++trueLen;	
 		}
 	}	
-
-	/* Testing if table has the correct storage
-	
-	*/
-
-	/*
-	for (int t = 0; t < 127; ++t)
-	{
-		cout << "Index: " << t << table[t] << endl;
-	}
-	*/
 }
 
 int main()
