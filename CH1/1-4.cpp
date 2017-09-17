@@ -38,11 +38,30 @@ bool bruteForce(char input[])
 	{
 		return true;
 	}
-	else
-	{
-		return false;
-	}
 
+	//Mistake: not initializing array to {0}, otherwise you get garbage
+	int table[128] = {0}, trueLen = 0;
+
+	for (int i = 0; i < totalLength; ++i)
+	{
+		if (isalnum(input[i]))
+		{	
+			int index = input[i];
+			table[index] += 1;
+			++trueLen;	
+		}
+	}	
+
+	/* Testing if table has the correct storage
+	
+	*/
+
+	/*
+	for (int t = 0; t < 127; ++t)
+	{
+		cout << "Index: " << t << table[t] << endl;
+	}
+	*/
 }
 
 int main()
@@ -53,7 +72,7 @@ int main()
 	//Boundary-case
 	char test1[1] = "";
 
-	bool checkIfPOP = bruteForce(test1);
+	bool checkIfPOP = bruteForce(input);
 	
 	/*
 	Expected output
