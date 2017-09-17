@@ -36,7 +36,17 @@ Helpful test case definitions that you can apply to testing your algorithms:
 
 - <a href="https://github.com/DittoPDX/CTCI/blob/master/CH1/1-3.cpp">1.3: URLify</a>
 
-- <a href="https://github.com/DittoPDX/CTCI/blob/master/CH1/1-3.cpp">1.4: Permutation of Palindrome</a>
+- <a href="https://github.com/DittoPDX/CTCI/blob/master/CH1/1-4.cpp">1.4: Permutation of Palindrome</a>
+
+- <a href="https://github.com/DittoPDX/CTCI/blob/master/CH1/1-5.cpp">1.5: One Away</a>
+
+- <a href="https://github.com/DittoPDX/CTCI/blob/master/CH1/1-6.cpp">1.6: String Compression</a>
+
+- <a href="https://github.com/DittoPDX/CTCI/blob/master/CH1/1-7.cpp">1.7: Rotate Matrix</a>
+
+- <a href="https://github.com/DittoPDX/CTCI/blob/master/CH1/1-8.cpp">1.8: Zero Matrix</a>
+
+- <a href="https://github.com/DittoPDX/CTCI/blob/master/CH1/1-9.cpp">1.9: String Rotation</a>
 
 ## Chapter 2 Linked Lists
 
