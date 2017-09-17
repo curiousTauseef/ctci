@@ -1,5 +1,5 @@
-# Cracking the Coding Interview - 6th Edition
-Interview Preparation w/ C++
+# (C++) Cracking the Coding Interview - 6th Edition
+Interview Preparation
 
 All questions were completed in under ~00:45:00 - 01:00:00 time limit
 
