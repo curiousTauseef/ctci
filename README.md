@@ -8,6 +8,18 @@ All questions were completed in under ~00:45:00 - 01:00:00 time limit
 Helpful test case definitions that you can apply to testing your algorithms:
 <a href="https://docs.google.com/document/d/1rfrGD9AFYc1IjOceACETc6R0U7pMxYLO96rT_o-cYvk/edit">Testing Your Code</a>
 
+# How I Approached these Problems
+
+1. Read the problem carefully and think about what it's asking for
+2. Get a piece of notebook paper
+3. Draw a diagram and write down pseudo-code
+4. Go through multiple examples and test your pseudo-code with those examples
+5. Translate your pseudo-code to actual code
+6. Always test code for edge, boundary, corner, and base cases
+7. If stuck on a solution for more than one hour, do not read the code, but read the hints/approaches
+8. From reading those hints/approaches, try to translate them to pseudo-code then to actual code
+
+
 # Table of Contents
 [Chapter 1 | Array and Strings](#chapter-1-array-and-strings)
 
