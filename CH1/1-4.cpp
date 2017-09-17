@@ -29,23 +29,33 @@ Not quite
 using namespace std;
 
 bool bruteForce(char input[]);
+bool optimized(char input[]);
 
 /*
-Time Complexity: O(2n) -> O(n) (Goes through data on average once)
-Space Complexity: O(128) -> O(1) requires constant size of 128 integers
+Time Complexity: O(n) + O(n) -> O(2n) = O(n)
+Goes through string with length "n" and goes through table length - 128 (constant)
+
+Space Complexity: O(128) -> O(1) : constant extra space of size 128
+
+Brute-force algorithm turns out to be one of the most efficient possibilities.
+Gayle Laakmann's solution is difficult to read and understand quickly compared to this simple
+array inplementation.
+
+Reasons:
+1. A hash table would have taken O(n) extra space
+2. A bit vector/set wouldn't have the same consistency as this algorithm, nor as readable
 */
 bool bruteForce(char input[])
 {
 	int totalLength = strlen(input);
 
-	if (totalLength <= 1)
-	{
-		return true;
-	}
+	//Palindrome counts if it's 1 or 0 characters
+	if (totalLength <= 1) return true;
 
 	//Mistake: not initializing array to {0}, otherwise you get garbage
 	int table[128] = {0}, trueLen = 0;
 
+	//Add the frequencies to the array table
 	for (int i = 0; i < totalLength; ++i)
 	{
 		if (isalnum(input[i]))
@@ -57,33 +67,26 @@ bool bruteForce(char input[])
 
 	int oddCount = 0;
 
+	//Count the number of odd frequencies
+	//Bool returns 0 as false and 1 as true
 	for (int p = 0; p < 127; ++p)
 	{
-		if (trueLen % 2 == 0)
-		{
-			if (table[p] % 2 != 0) return false;
-		}
-		else
-		{
-			if (table[p] % 2 != 0) ++oddCount;
-
-			if (oddCount > 1) return false;
-		}
+		oddCount += table[p] % 2;
 	}
 
-	return true;
+	return oddCount <= 1;
 }
 
 int main()
 {
 	//Input string
 	char input[9] = "tact coa";
-	char input2[7] = "anna";
+	char input2[7] = "annasb";
 
 	//Boundary-case
 	char test1[1] = "";
 
-	bool checkIfPOP = bruteForce(input);
+	bool checkIfPOP = bruteForce(input2);
 
 	cout << "Permutation of String: " << checkIfPOP << endl;	
 

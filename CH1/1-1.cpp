@@ -68,10 +68,12 @@ bool optimized(char array[], int size)
 
 	bool table[256];
 
+	//Go through entire string
 	for (int i = 0; i < size; ++i)
 	{
 		int decOfAscii = array[i];
-		
+	
+		//If marked already found, it's not unique	
 		if (table[decOfAscii] == true)
 		{
 			return false;

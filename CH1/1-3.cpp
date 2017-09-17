@@ -72,6 +72,7 @@ void optimized(char input[], int sizeString)
 	//Start at index 16, but size is 17 for '/0' char
 	int j = strlen(input) - 1;
 
+	//Copy from the end, but start at the "real" string
 	for (int i = sizeString; i > -1; --i)
 	{
 		input[j] = input[i];
