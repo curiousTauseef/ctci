@@ -25,6 +25,7 @@ option? Do these need to be 2 separate checks?
 using namespace std;
 
 bool bruteForce(char str1[], char str2[]);
+bool optimized(char s1[], char s2[]);
 
 /*
 Time Complexity: O(n)
@@ -68,6 +69,11 @@ bool bruteForce(char str1[], char str2[])
 	}
 
 	return true;
+}
+
+bool optimized(char s1[], char s2[])
+{
+
 }
 
 int main()
