@@ -52,10 +52,6 @@ bool bruteForce(char input[])
 		}
 	}	
 
-	/* Testing if table has the correct storage
-	
-	*/
-
 	/*
 	for (int t = 0; t < 127; ++t)
 	{
