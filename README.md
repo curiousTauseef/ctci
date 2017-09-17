@@ -6,7 +6,7 @@ All questions were completed in under ~00:45:00 - 01:00:00 time limit
 *Recommend learning more on www.geeksforgeeks.org/ for tries, heaps, etc. which are not covered enough in CTCI*
 
 Helpful test case definitions that you can apply to testing your algorithms:
-https://docs.google.com/document/d/1rfrGD9AFYc1IjOceACETc6R0U7pMxYLO96rT_o-cYvk/edit
+<a href="https://docs.google.com/document/d/1rfrGD9AFYc1IjOceACETc6R0U7pMxYLO96rT_o-cYvk/edit">Testing Your Code</a>
 
 # Table of Contents
 [Chapter 1 | Array and Strings](#chapter-1-array-and-strings)
