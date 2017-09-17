@@ -1,8 +1,8 @@
 /*
-1.2
-Check Permutation: Given 2 strings, write a method to decide if one is a permutation of the other.
+- Check Permutation-
+Given 2 strings, write a method to decide if one is a permutation of the other.
 
-Hints:
+- Hints -
 
 #1: Describe what it means for two strings to be permutations of each other. Now look at the
 definition you provided. Can you check the strings against that definition?

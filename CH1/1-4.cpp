@@ -5,7 +5,7 @@ A palindrome is a word or phrase that is the same forwards & backwards.
 A permutation is a rearrangement of letters. The palindrome does not need to be
 limited to just dictionary words. (ASCII - 128 or 256 for extended)
 
-Hints:
+- Hints -
 
 #106: No need to generate permutations - too inefficient
 Use hint #121 for a possible solution
@@ -20,6 +20,7 @@ TC: O(n) and SC: (n)
 
 #136: Can you reduce the space usage by using a bit set?
 Not quite
+
 */
 
 #include <iostream>
