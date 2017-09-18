@@ -13,6 +13,8 @@ You can assume the string has only uppercase and lowercase letters
 - TWIST -
 To make things harder, assume that we have NO SPACE. This means that
 this algorithm must be done in place. -Amazon SE Question : Glassdoor
+*Given that the input string will not result in a larger string
+*Allowed usage of <string> library
 
 - Hints -
 
@@ -24,31 +26,31 @@ together. This can be very inefficient.
 */
 
 #include <iostream>
-#include <cstring>
+#include <string>
 #include <cctype>
 
 using namespace std;
 
 //"*&" -> alias for passing parameter (allows modification)
-void stringComp(char input[]);
+string bruteForce(string input);
 
-void stringComp(char input[])
+string bruteForce(string input)
 {
-	
+
 }
 
 int main()
 {
 	/*Should return a2b1c5a3*/
-	char str1[12] = "aabcccccaaa";
+	string s1 = "aabcccccaaa";
 
 	/*Should return abcd*/
-	char str3[5] = "abcd";
+	string s2 = "abcd";
 
 	/*Should return abca3b3*/
-	char str5[10] = "abcaaabbb";
+	string s3 = "abcaaabbb";
 
-	stringComp(str1, str2);
+	bruteForce(s1);
 
 	return 0;
 }
