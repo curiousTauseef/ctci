@@ -35,13 +35,18 @@ using namespace std;
 //"*&" -> alias for passing parameter (allows modification)
 string to_string(int count);
 string bruteForce(string input);
+string optimized(string input);
 
 //Convert the frequencies of characters to string
 string to_string(int count)
 {
+	//Write formatted output to sized buffer
 	int length = snprintf(NULL, 0, "%d", count);
 
+	//Create new buffer
 	char * buffer = new char[length + 1];
+
+	//Write the number into the buffer
 	snprintf(buffer, length + 1, "%d", count);
 	string freq (buffer);
 
@@ -85,13 +90,20 @@ string bruteForce(string input)
 		}
 		else
 		{
+			//Handle the case of the last character + freq
 			string freq = to_string(count);
 			result += input[i] + freq;
+
 			if (result.length() >= len) return input;
 		}
 	}
 
 	return result;
+}
+
+string optimized(string input)
+{
+
 }
 
 int main()
@@ -112,6 +124,8 @@ int main()
 	cout << "(B) Result: " << r1 << endl;
 	cout << "(B) Result: " << r2 << endl;
 	cout << "(B) Result: " << r3 << endl;
+
+	/*End of brute-force solution*/
 
 	return 0;
 }
