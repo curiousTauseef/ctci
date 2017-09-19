@@ -54,7 +54,7 @@ bool bruteForce(char input[])
 	if (totalLength <= 1) return true;
 
 	//Mistake: not initializing array to {0}, otherwise you get garbage
-	int table[128] = {0}, trueLen = 0;
+	int table[128] = {0};
 
 	//Add the frequencies to the array table
 	for (int i = 0; i < totalLength; ++i)
@@ -62,7 +62,6 @@ bool bruteForce(char input[])
 		if (isalnum(input[i]))
 		{	
 			++table[(int) input[i]];
-			++trueLen;	
 		}
 	}	
 
