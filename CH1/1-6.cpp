@@ -136,7 +136,6 @@ string optimized(string input)
 
 		//Move i over N digits of the frequency number (e.g. 10 -> move 2 indices)
 		i += freq.length();
-
 	}	
 
 	return input;
@@ -164,12 +163,12 @@ int main()
 	/*End of brute-force solution*/
 		
 	string r4 = optimized(s1);
-	string r5 = bruteForce(s2);
-	string r6 = bruteForce(s3);
+	string r5 = optimized(s2);
+	string r6 = optimized(s3);
 
 	cout << "(O) Result: " << r4 << endl;
-	cout << "(O) Result: " << r5 << endl;
-	cout << "(O) Result: " << r6 << endl;
+	//cout << "(O) Result: " << r5 << endl;
+	//cout << "(O) Result: " << r6 << endl;
 
 	/*End of optimized solution*/
 
