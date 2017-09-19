@@ -54,8 +54,10 @@ Helpful test case definitions that you can apply to testing your algorithms:
 
 - <a href="https://github.com/DittoPDX/CTCI/blob/master/CH1/1-6.cpp">1.6: String Compression</a>
 
-*Optimized question asked by Amazon in a Software Engineer Interview. If done without <strings>
+<blockquote>
+Optimized question asked by Amazon in a Software Engineer Interview. If done without <strings>
 it would require multiple tedious implementations of concatenation from digits to char.
+</blockquote>
 
 - <a href="https://github.com/DittoPDX/CTCI/blob/master/CH1/1-7.cpp">1.7: Rotate Matrix</a>
 
