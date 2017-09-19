@@ -101,9 +101,45 @@ string bruteForce(string input)
 	return result;
 }
 
+/*
+Time Complexity: O(n)
+Although nested, we iterate through each data once with two indices
+for the algorithm. After iterating through the duplicated chars,
+we split the string by beginning, frequency, and end.
+
+Space Complexity: O(1)
+Requires no extra space for the algorithm
+*/
 string optimized(string input)
 {
+	int len = input.length();
 
+	//Cannot have an input of less than 2 characters
+	if (len < 2) return input;
+
+	for (int i = 0; i < len && input[i + 1] != '\0'; ++i)
+	{
+		//Look-ahead approach
+		int count = i + 1;
+
+		//Count all occurences of the number at index i
+		while (count < len && input[count] == input[i])
+		{
+			++count;
+		}
+
+		//Make sure to save the frequency count to a string
+		string freq = to_string(count - i);
+
+		//Attach the beginning, frequency, and end part without the duplicates
+		input = input.substr(0, i + 1) + freq + input.substr(count);
+
+		//Move i over N digits of the frequency number (e.g. 10 -> move 2 indices)
+		i += freq.length();
+
+	}	
+
+	return input;
 }
 
 int main()
@@ -123,9 +159,19 @@ int main()
 
 	cout << "(B) Result: " << r1 << endl;
 	cout << "(B) Result: " << r2 << endl;
-	cout << "(B) Result: " << r3 << endl;
+	cout << "(B) Result: " << r3 << endl << endl;
 
 	/*End of brute-force solution*/
+		
+	string r4 = optimized(s1);
+	string r5 = bruteForce(s2);
+	string r6 = bruteForce(s3);
+
+	cout << "(O) Result: " << r4 << endl;
+	cout << "(O) Result: " << r5 << endl;
+	cout << "(O) Result: " << r6 << endl;
+
+	/*End of optimized solution*/
 
 	return 0;
 }
