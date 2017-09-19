@@ -44,19 +44,41 @@ Helpful test case definitions that you can apply to testing your algorithms:
 
 - <a href="https://github.com/DittoPDX/CTCI/blob/master/CH1/1-1.cpp">1.1: Is Unique</a>
 
+<blockquote>
+Optimized question requires doing some look-ups on the bitset documentation.
+</blockquote>
+
 - <a href="https://github.com/DittoPDX/CTCI/blob/master/CH1/1-2.cpp">1.2: Check Permutation</a>
+
+<blockquote>
+Optimized question requires understanding word frequency and using a simple array structure.
+</blockquote>
 
 - <a href="https://github.com/DittoPDX/CTCI/blob/master/CH1/1-3.cpp">1.3: URLify</a>
 
+<blockquote>
+Optimized question asked by Microsoft. Modifying a string from the end is useful here.
+</blockquote>
+
 - <a href="https://github.com/DittoPDX/CTCI/blob/master/CH1/1-4.cpp">1.4: Permutation of Palindrome</a>
 
+<blockquote>
+Optimized solution requires understanding the relationship between palindromes and permutations.
+</blockquote>
+
 - <a href="https://github.com/DittoPDX/CTCI/blob/master/CH1/1-5.cpp">1.5: One Away</a>
+
+<blockquote>
+Optimized question is tricky. Only one if-statement is needed for the equal length special case.
+</blockquote>
+
 
 - <a href="https://github.com/DittoPDX/CTCI/blob/master/CH1/1-6.cpp">1.6: String Compression</a>
 
 <blockquote>
-Optimized question asked by Amazon in a Software Engineer Interview. If done without <strings>
-it would require multiple tedious implementations of concatenation from digits to char.
+Optimized question asked by Amazon in a Software Engineer Interview. If done without "string",
+it would require multiple tedious implementations of concatenation from digits to char. Highly
+recommend this question; requires some understanding of "string" library and conversions.
 </blockquote>
 
 - <a href="https://github.com/DittoPDX/CTCI/blob/master/CH1/1-7.cpp">1.7: Rotate Matrix</a>
