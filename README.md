@@ -83,6 +83,11 @@ recommend this question; requires some understanding of "string" library and con
 
 - <a href="https://github.com/DittoPDX/CTCI/blob/master/CH1/1-7.cpp">1.7: Rotate Matrix</a>
 
+<blockquote>
+Optimized question requires some knowledge of matrix algebra. The rest of the algorithm can be derived with a reverse strategy. C++ can pass 2-D arrays by doing "T (&array)[][]".
+</blockquote>
+
+
 - <a href="https://github.com/DittoPDX/CTCI/blob/master/CH1/1-8.cpp">1.8: Zero Matrix</a>
 
 - <a href="https://github.com/DittoPDX/CTCI/blob/master/CH1/1-9.cpp">1.9: String Rotation</a>
