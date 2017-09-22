@@ -121,7 +121,7 @@ int main()
 		{7, 8, 9}
 	};
 
-	int N2 = sizeof(matrix2[0])/sizeof(matrix[0][0]);
+	int N2 = sizeof(matrix2[0])/sizeof(matrix2[0][0]);
 
 	int matrix3[4][4] =
 	{
@@ -131,7 +131,7 @@ int main()
 		{13, 14, 15, 16}
 	};
 
-	int N3 = sizeof(matrix3[0])/sizeof(matrix[0][0]);
+	int N3 = sizeof(matrix3[0])/sizeof(matrix3[0][0]);
 
 	//Testing the matrices with the 90 degree rotation
 	rotateMatrix(matrix);

@@ -24,8 +24,50 @@ data storage?
 
 using namespace std;
 
+template <size_t N>
+void printMatrix(int (&matrix)[N][N]);
+
+template <size_t N>
+void printMatrix(int (&matrix)[N][N])
+{
+	for (int i = 0; i < N; ++i)
+	{
+		for (int j = 0; j < N; ++j)
+		{
+			cout << matrix[i][j] << "  ";
+		}	
+
+		cout << endl;
+	}
+}
+
 int main()
 {
+	int matrix[2][2] =
+	{
+		{1, 2},
+		{3, 4}
+	};
+
+	int N = sizeof(matrix[0])/sizeof(matrix[0][0]);
+
+	int matrix2[3][3] =
+	{
+		{1, 2, 3},
+		{4, 5, 6},
+		{7, 8, 9}
+	};
+
+	int N2 = sizeof(matrix2[0])/sizeof(matrix2[0][0]);
+
+	int matrix3[4][4] =
+	{
+		{1, 2, 3, 4},
+		{5, 6, 7, 8},
+		{9, 10, 11, 12}
+	};
+
+	int N3 = sizeof(matrix3[0])/sizeof(matrix3[0][0]);
 
 	return 0;
 }
