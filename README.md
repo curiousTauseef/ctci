@@ -90,6 +90,10 @@ Optimized question requires some knowledge of matrix algebra. The rest of the al
 
 - <a href="https://github.com/DittoPDX/CTCI/blob/master/CH1/1-8.cpp">1.8: Zero Matrix</a>
 
+<blockquote>
+Optimized question that's a bit tricky. Biggest trick is to use row #0 and col #0 as "auxiliary" arrays to get to O(1) space complexity. Amazon supposedly asked this sort of similar question.
+</blockquote>
+
 - <a href="https://github.com/DittoPDX/CTCI/blob/master/CH1/1-9.cpp">1.9: String Rotation</a>
 
 ## Chapter 2 Linked Lists
