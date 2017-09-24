@@ -3,7 +3,7 @@
 Assume you have a method "isSubstring" which checks if one word
 is a substring of another. Given 2 strings, s1 and s2, write
 code to check if s2 is a rotation of s1 using only one call
-to "isSubString". 
+to "isSubString".
 
 (e.g. "waterbottle" is a rotation of "erbottlewat")
 
@@ -32,6 +32,8 @@ using namespace std;
 
 int main()
 {
+	char s1[12] = "waterbottle";
+	char s2[12] = "erbottlewat";
 
 	return 0;
 }
