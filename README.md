@@ -96,6 +96,10 @@ Optimized question that's a bit tricky. Biggest trick is to use row #0 and col #
 
 - <a href="https://github.com/DittoPDX/CTCI/blob/master/CH1/1-9.cpp">1.9: String Rotation</a>
 
+<blockquote>
+Optimized question requires some basic knowledge of C++ "string" library. Biggest idea is that you can double the first array, and then call the substring() function once.
+</blockquote>
+
 ## Chapter 2 Linked Lists
 
 ## Chapter 3 Stacks and Queues
