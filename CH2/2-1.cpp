@@ -1,6 +1,7 @@
 /*
 - Remove Dups -
-Write code to remove duplicates from an unsorted linked list.
+Write code to remove duplicates from an unsorted linked list of integers.
+(Assume not sorted)
 
 FOLLOW UP (Required: O(1) Space Complexity)
 How would you solve this problem if a temporary buffer is not allowed?
