@@ -12,6 +12,7 @@ Two more possible solutions:
 */
 
 #include <iostream>
+#include <unordered_set>
 
 using namespace std;
 
@@ -25,8 +26,12 @@ void build(node *& list, int data);
 void destroy(node *& list);
 void print(node * list);
 
+// O(N^2) & O(1)
 void removeDups(node *& list);
 void rdHelper(node *& list, int value);
+
+// O(N) & O(N)
+void removeDups2(node *& list);
 
 void build(node *& list, int data)
 {
@@ -73,13 +78,13 @@ void removeDups(node *& list)
 {
 	if (!list || !list->next) return;
 
-	//Use temporary pointer to keep existing list
+	// Use temporary pointer to keep existing list
 	node * temp = list;
 
-	//Loop until temp is NULL
+	// Loop until temp is NULL
 	while (temp)
 	{
-		//Compare the rest of the nodes
+		// Compare the rest of the nodes
 		rdHelper(temp -> next, temp -> data);
 		temp = temp -> next;
 	}
@@ -91,14 +96,14 @@ void rdHelper(node *& list, int value)
 
 	if (list -> data == value)
 	{
-		//Delete the node that has non-null next pointer
+		// Delete the node that has non-null next pointer
 		if (list -> next)
 		{
 			node * temp = list -> next;
 			delete list;
 			list = temp;	
 		}
-		//Delete the node that has null next pointer
+		// Delete the node that has null next pointer
 		else
 		{
 			delete list;
@@ -108,6 +113,33 @@ void rdHelper(node *& list, int value)
 	}	
 	
 	rdHelper(list -> next, value);
+}
+
+// O(N) time complexity and O(N) space complexity.
+// Uses built-in C++ unordered_set hash table data structure
+void removeDups2(node *& list)
+{
+	if (!list) return;
+
+	node * curr = list;
+	node * prev = NULL;
+	unordered_set<int> myset;
+
+	while (curr)
+	{
+		if (myset.find(curr -> data) != myset.end())
+		{ 
+			prev -> next = curr -> next;
+			delete curr;
+			curr = prev -> next;
+		}
+		else
+		{
+			myset.insert(curr -> data);
+			prev = curr;
+			curr = curr -> next;
+		}
+	}
 }
 
 int main()
@@ -131,7 +163,8 @@ int main()
 	build(list, 3);
 	build(list, 3);
 
-	removeDups(list);
+	//removeDups(list);
+	removeDups2(list);
 	print(list);
 	destroy(list);
 
