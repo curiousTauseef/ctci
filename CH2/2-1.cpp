@@ -7,8 +7,8 @@ FOLLOW UP (Required: O(1) Space Complexity)
 How would you solve this problem if a temporary buffer is not allowed?
 Solved the problem with recursion instead of allocating a MAX_INT array of integers.
 Two more possible solutions:
-1. Sort the list then delete in linear fashion
-2. Use unordered set
+1. Sort the list using mergesort then delete in linear fashion
+2. Use map to store the values
 */
 
 #include <iostream>
