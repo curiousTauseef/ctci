@@ -71,6 +71,9 @@ void print(node * list)
 	print(list -> next);
 }
 
+// O(N)
+// Utilizes backtracking recursion and stores the k'th
+// value into the passed-by-reference result
 int findKTH(node * list, int & result, int value)
 {
 	if (!list) return 0;
