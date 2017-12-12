@@ -114,13 +114,13 @@ Optimized question requires using mergesort or using unordered set to store the 
 Optimized question requires some basic knowledge of back-tracking during recursion.
 </blockquote>
 
-## Chapter 3 Stacks and Queues
-
 - <a href="https://github.com/DittoPDX/CTCI/blob/master/CH2/2-3.cpp">2-3: Delete Middle Node</a>
 
 <blockquote>
 Optimized question requires some basic knowledge of back-tracking during recursion.
 </blockquote>
+
+## Chapter 3 Stacks and Queues
 
 ## Chapter 4 Trees and Graphs
 
