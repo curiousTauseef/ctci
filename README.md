@@ -120,6 +120,11 @@ Optimized question requires some basic knowledge of back-tracking during recursi
 Optimized question requires some basic knowledge of back-tracking during recursion.
 </blockquote>
 
+- <a href="https://github.com/DittoPDX/CTCI/blob/master/CH2/2-4.cpp">2.4: Partition</a>
+
+<blockquote>
+Optimized question . . . 
+</blockquote>
 ## Chapter 3 Stacks and Queues
 
 ## Chapter 4 Trees and Graphs
