@@ -102,7 +102,25 @@ Optimized question requires some basic knowledge of C++ "string" library. Bigges
 
 ## Chapter 2 Linked Lists
 
+- <a href="https://github.com/DittoPDX/CTCI/blob/master/CH2/2-1.cpp">2.1: Remove Dups</a>
+
+<blockquote>
+Optimized question requires using mergesort or using unordered set to store the duplicates.
+</blockquote>
+
+- <a href="https://github.com/DittoPDX/CTCI/blob/master/CH2/2-2.cpp">2-2: Return Kth to Last</a>
+
+<blockquote>
+Optimized question requires some basic knowledge of back-tracking during recursion.
+</blockquote>
+
 ## Chapter 3 Stacks and Queues
+
+- <a href="https://github.com/DittoPDX/CTCI/blob/master/CH2/2-3.cpp">2-3: Delete Middle Node</a>
+
+<blockquote>
+Optimized question requires some basic knowledge of back-tracking during recursion.
+</blockquote>
 
 ## Chapter 4 Trees and Graphs
 
