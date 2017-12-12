@@ -108,13 +108,13 @@ Optimized question requires some basic knowledge of C++ "string" library. Bigges
 Optimized question requires using mergesort or using unordered set to store the duplicates.
 </blockquote>
 
-- <a href="https://github.com/DittoPDX/CTCI/blob/master/CH2/2-2.cpp">2-2: Return Kth to Last</a>
+- <a href="https://github.com/DittoPDX/CTCI/blob/master/CH2/2-2.cpp">2.2: Return Kth to Last</a>
 
 <blockquote>
 Optimized question requires some basic knowledge of back-tracking during recursion.
 </blockquote>
 
-- <a href="https://github.com/DittoPDX/CTCI/blob/master/CH2/2-3.cpp">2-3: Delete Middle Node</a>
+- <a href="https://github.com/DittoPDX/CTCI/blob/master/CH2/2-3.cpp">2.3: Delete Middle Node</a>
 
 <blockquote>
 Optimized question requires some basic knowledge of back-tracking during recursion.
