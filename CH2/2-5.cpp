@@ -10,7 +10,7 @@ list.
 Input: (7 -> 1 -> 6) + (5 -> 9 -> 2). That is, 617 + 295.
 Output: 2 -> 1 -> 9. That is, 912.
 
-- FOLLOW UP -
+- FOLLOW UP - (basically same thing)
 Suppose the digits are stored in forward order. Repeat the above
 pattern.
 

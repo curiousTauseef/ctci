@@ -7,6 +7,8 @@ returns the node at the beginning of the loop.
 Input: A -> B -> C -> D -> E -> C (same C just to the left)
 Output: C
 
+Question is too easy.
+
 - HINTS -
 #50, 69, 83, 90
 */

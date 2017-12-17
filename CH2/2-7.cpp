@@ -7,6 +7,8 @@ k'th node of the 1st linked list is the exact same node
 (by reference) as the j'th node of the 2nd linked list, 
 then they are intersecting.
 
+Do the value version of this on leetcode.
+
 - HINTS-
 #20, 45, 55, 65, 76, 93, 111, 120, 129
 */
