@@ -12,6 +12,7 @@ Either use BFS or DFS to find the desired node along the path
 
 #include <iostream>
 #include <stack>
+#include <queue>
 
 using namespace std;
 
@@ -37,6 +38,8 @@ bool hasRoute(vertex * graph, int one, int two);
 void DFS(vertex * graph, int v);
 void helperDFS(vertex * graph, int v, bool visited[]);
 int getIndex(vertex * graph, int toFind);
+
+void BFS(vertex * graph, int index);
 
 void build(vertex *& graph)
 {
@@ -158,20 +161,60 @@ int getIndex(vertex * graph, int toFind)
 	}
 }
 
+void BFS(vertex * graph, int index)
+{
+	bool * visited = new bool[5];
+	for (int i = 0; i < 5; ++i)
+	{
+		visited[i] = false;
+	}
+
+	queue<int> myQueue;
+	myQueue.push(index);
+	visited[index] = true;
+	node * start = graph[index].head;
+	int curr = 0;
+
+	cout << graph[index].data << endl;
+
+	while (!myQueue.empty())
+	{
+		curr = myQueue.front();
+		myQueue.pop();
+
+		while (start)
+		{
+			curr = getIndex(graph, start -> adjacent -> data);
+			cout << start -> adjacent -> data << endl;
+
+			if (!visited[curr])
+			{
+				visited[curr] = true;
+				myQueue.push(curr);
+			}
+
+			start = start -> next;
+		}
+
+		start = graph[curr].head;
+	}
+}
+
 int main()
 {
 	vertex * graph = new vertex[5];
 	build(graph);
 	insertEdge(graph, 0, 1);
-	insertEdge(graph, 1, 2);
 	insertEdge(graph, 2, 3);
-	insertEdge(graph, 3, 4);
+	insertEdge(graph, 1, 4);
+	insertEdge(graph, 4, 2);
 	//insertEdge(graph, 4, 0);
 	//insertEdge(graph, 0, 4);
 	//insertEdge(graph, 4, 2);
 	display(graph);
-
+	cout << "----------------" << endl;
+	BFS(graph, 0);
 	//DFS(graph, 0);
 	//cout << endl;
-	(hasRoute(graph, 3, 2) == 1) ? cout << "There's a path!" << endl : cout << "No path!" << endl;
+	//(hasRoute(graph, 3, 2) == 1) ? cout << "There's a path!" << endl : cout << "No path!" << endl;
 }
